@@ -2,7 +2,6 @@
 #include <stdbool.h>
 
 int main() {
-<<<<<<< HEAD
     int intMap[20][100] = {0};
 	//0 means nothing there: ( . ), 1 means path: ( # ), 2 means player: ( P ).
 
@@ -52,33 +51,9 @@ int main() {
 				proceed = false;
 				break;
 			default:
-				printf("UwU 0 _ 0");
+				printf("You must enter one of the commands!");
 		}
 	}
-=======
-    char charMap[20][100];
-	charMap[0][0] = 'X';
-	char directions[4][10] = { "North", "East", "South", "West" };
-	int directionX[] = {0,     -1,       0,      1};
-	int directionY[] = {1,      0,      -1,      0};
-
-	//charMap[][];
-
-	for (int i=0; i<20; i++){
-		for (int j=0; j<100; j++){
-			if (charMap[i][j] == NULL) {
-				printf("+");
-			}
-			else {
-				printf("%c", charMap[i][j]);
-			}
-		}
-		printf("\n");
-	}
-
-
-
->>>>>>> b3c486918ae6a0edf9d8271a2f8bc0820bf8c629
     return 0;
 }
 
