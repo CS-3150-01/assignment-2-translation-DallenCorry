@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+void printMap(int map[20][100]);
+
 int main() {
     int intMap[20][100] = {0};
 	//0 means nothing there: ( . ), 1 means path: ( # ), 2 means player: ( P ).
@@ -51,7 +53,7 @@ int main() {
 				proceed = false;
 				break;
 			default:
-				printf("You must enter one of the commands!");
+				printf("You must enter one of the commands!\n");
 		}
 	}
     return 0;
